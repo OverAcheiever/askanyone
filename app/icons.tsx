@@ -81,3 +81,22 @@ export const UserIcon = () => {
     </svg>
   )
 }
+
+
+export const SendArrow = ({ className }: { className?: string }) => {
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+<g id="Frame" clip-path="url(#clip0_3_1531)">
+<path id="Vector" d="M18.5 7.50012V28.5001" stroke="black" stroke-width="2.28516" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M27.5 16.5001L18.5 7.50012" stroke="black" stroke-width="2.28516" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M9.5 16.5001L18.5 7.50012" stroke="black" stroke-width="2.28516" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3_1531">
+<rect width="36" height="36" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
+  )
+}
+

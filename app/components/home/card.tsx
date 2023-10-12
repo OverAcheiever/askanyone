@@ -6,7 +6,7 @@ const Card = ({
   person,
 }: {
   person: {
-    image: StaticImageData; 
+    image: StaticImageData;
     name: string;
     about: string;
   };

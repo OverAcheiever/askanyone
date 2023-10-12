@@ -52,7 +52,7 @@ export default function Chat() {
           </Link>
           <div className="pl-3 font-medium text-white">ANDREW HUBERMAN</div>
         </div>
-        <div className="font-inter mt-4 lg:mt-6">
+        <div className="font-inter mt-2 lg:mt-6">
           {messages.map((message, i) => (
             <div
               key={i}
@@ -65,8 +65,9 @@ export default function Chat() {
                 <div
                   className={clsx(
                     message.role === "assistant"
-                      ? "bg-[#353535] w-14 h-14 flex justify-center items-center rounded-full"
-                      : "bg-[#353535] p-1.5 text-white w-14 h-14 flex justify-center items-center rounded-full",
+                      ? "bg-[#353535]"
+                      : "bg-[#353535] p-1.5 text-white",
+                    "w-12 h-12 lg:w-14 lg:h-14 flex justify-center items-center rounded-full",
                   )}
                 >
                   {message.role === "user" ? (
@@ -86,7 +87,7 @@ export default function Chat() {
                   <div className="text-[#999999] font-medium text-lg w-max h-max">
                     Andrew
                   </div>
-                  <div className="prose prose-p:leading-relaxed mt-1 w-full text-[#ffffffb3] break-words">
+                  <div className="prose prose-p:leading-relaxed text-sm lg:text-base lg:mt-1 w-full text-[#ffffffb3] break-words">
                     {message.content}
                   </div>
                 </div>
@@ -115,11 +116,11 @@ export default function Chat() {
                   }
                 }}
                 spellCheck={false}
-                className="w-full pl-4 mt-0.5 focus:outline-none bg-black placeholder:text-[rgba(255,255,255,0.5)] text-white font-inter font-normal"
+                className="w-full pl-2 lg:pl-4 mt-0.5 focus:outline-none bg-black placeholder:text-[rgba(255,255,255,0.5)] text-white font-inter font-normal"
               />
               <button
                 className={clsx(
-                  "absolute inset-y-0 right-3 my-auto flex h-9 w-9 items-center justify-center rounded-full transition-all",
+                  "absolute inset-y-0 right-2.5 lg:right-3 my-auto flex h-9 w-9 items-center justify-center rounded-full transition-all",
                   disabled
                     ? "cursor-not-allowed bg-white"
                     : "bg-green-500 hover:bg-green-600",

@@ -23,7 +23,17 @@ const Card = ({
         if (person.name === "ANDREW HUBERMAN")
           window.location.href = "/chat/andrew-huberman";
         else {
-          toast.error(`${person.name} ai still in progress`);
+          toast.error(
+            <div className="w-full text-xl font-medium text-black bg-white max-w-none">
+              {person.name} AI STILL IN PROGRESS
+            </div>,
+            {
+              icon: null,
+              style: {
+                maxWidth: "none",
+              },
+            },
+          );
         }
       }}
     >

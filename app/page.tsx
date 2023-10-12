@@ -9,25 +9,33 @@ export const people = [
     name: "ANDREW HUBERMAN",
     about:
       "a neuroscientist and tenured professor in the Department of Neurobiology",
-    users: "1.2k",
   },
   {
     image: Kanye,
     name: "KANYE WEST",
     about:
       "American rapper, singer, songwriter, record producer, and fashion designer.",
-    users: "1.3k",
   },
   {
     image: Jordan,
     name: "JORDAN PETERSON",
     about:
       "Canadian clinical psychologist, Professor of Psychology at the University of Toronto and author.",
-    users: "1.4k",
   },
 ];
 
+const getPeople = () => {
+  const userCount = () => {
+    const users = Math.floor(Math.random() * (14 - 9 + 1) + 9) * 100;
+    return users > 1000 ? `${users / 1000}k` : users.toString();
+  };
+
+  return people.map(person => ({ ...person, users: userCount() }));
+};
+
 const Page = () => {
+  const people = getPeople();
+
   return (
     <div className="flex flex-col items-center justify-start w-full py-32 bg-black h-max">
       <div>

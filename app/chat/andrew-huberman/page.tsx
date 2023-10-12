@@ -38,7 +38,7 @@ export default function Chat() {
   const disabled = isLoading || input.length === 0;
 
   return (
-    <main className="flex justify-center pt-10 pb-40 bg-black">
+    <main className="flex justify-center pt-4 lg:pt-10 pb-40 bg-black">
       <div className="w-full max-w-screen-lg">
         <div className="flex items-center w-full text-xl pl-2 lg:pl-0 lg:text-4xl">
           <Link href="/">
@@ -93,7 +93,7 @@ export default function Chat() {
               </div>
             </div>
           ))}
-          <div className="fixed flex flex-col items-center w-full max-w-screen-lg space-y-3 bottom-6 sm:px-0">
+          <div className="fixed flex flex-col items-center w-full max-w-screen-lg space-y-3 bottom-6 px-4">
             <form
               ref={formRef}
               onSubmit={handleSubmit}

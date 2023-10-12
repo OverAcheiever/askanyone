@@ -5,7 +5,7 @@ import { people } from "./people";
 const getPeople = () => {
   const userCount = () => {
     const users = Math.floor(Math.random() * (14 - 9 + 1) + 9) * 100;
-    return users > 1000 ? `${users / 1000}k` : users.toString();
+    return users >= 1000 ? `${users / 1000}k` : users.toString();
   };
 
   return people.map((person) => ({ ...person, users: userCount() }));

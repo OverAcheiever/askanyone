@@ -48,13 +48,13 @@ const Card = ({
           className="rounded-t-2xl"
           priority
         />
-        <div className="p-5 px-6">
+        <div className="p-4 px-5 lg:p-5 lg:px-6 mt-2">
           <div className="text-white text-3xl font-semibold">{person.name}</div>
           <div className="max-w-xs text-[#999999] font-inter font-normal mt-0.5">
             {person.about}
           </div>
           <div className="flex items-center gap-x-1 lg:gap-x-2 mt-1 lg:mt-2">
-            <div className="w-4 h-4 lg:w-8 lg:h-8">
+            <div className="w-5 h-5 lg:w-6 lg:h-6">
               <Image src={UsersImage} alt="" />
             </div>
             {/* <div className="hidden lg:block">
@@ -63,7 +63,7 @@ const Card = ({
             <div className="lg:hidden">
               <CommentIconMobile />
             </div> */}
-            <div className="text-[#999999] font-medium text-base lg:text-2xl tracking-wide">
+            <div className="text-[#999999] ml-0.5 font-medium text-base lg:text-xl tracking-wide">
               {person.users}
             </div>
           </div>

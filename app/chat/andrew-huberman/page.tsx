@@ -48,6 +48,7 @@ export default function Chat() {
               width={40}
               height={40}
               className="cursor-pointer"
+              priority
             />
           </Link>
           <div className="pl-3 font-medium text-white">ANDREW HUBERMAN</div>
@@ -79,6 +80,7 @@ export default function Chat() {
                         className="rounded-full"
                         alt="Shakespeare"
                         fill
+                        priority
                       />
                     </div>
                   )}

@@ -14,6 +14,7 @@ import {
 import Textarea from "react-textarea-autosize";
 import Image from "next/image";
 import { people } from "@/app/page";
+import Link from "next/link";
 
 const examples = [
   "To be or not to be",
@@ -40,8 +41,9 @@ export default function Chat() {
     <main className="flex justify-center pt-10 pb-40 bg-black jus">
       <div className="w-full max-w-screen-lg">
         <div className="flex items-center w-full text-4xl">
-          <Image src="/back.svg" alt="" width={40} height={40} />
-
+          <Link href="/">
+            <Image src="/back.svg" alt="" width={40} height={40} className="cursor-pointer" />
+          </Link>
           <div className="pl-3 font-medium text-white">ANDREW HUBERMAN</div>
         </div>
         <div className="font-inter">

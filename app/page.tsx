@@ -1,6 +1,7 @@
 import Card from "./components/home/card";
 import { people } from "./people";
 
+
 const getPeople = () => {
   const userCount = () => {
     const users = Math.floor(Math.random() * (14 - 9 + 1) + 9) * 100;

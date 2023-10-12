@@ -19,10 +19,12 @@ const Card = ({
         await posthog.capture("person_click", {
           name: person.name.toLowerCase(),
         });
-        toast.error(`${person.name} ai still in progress`);
 
-        // if (person.name === "ANDREW HUBERMAN")
-        //   window.location.href = "/chat/andrew-huberman";
+        if (person.name === "ANDREW HUBERMAN")
+          window.location.href = "/chat/andrew-huberman";
+        else {
+          toast.error(`${person.name} ai still in progress`);
+        }
       }}
     >
       <Toaster position="bottom-center" />

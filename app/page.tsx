@@ -26,6 +26,7 @@ const Page = () => {
         </div>
         {people.map((person, index) => (
           <Card person={person} />
+          
         ))}
       </div>
     </div>

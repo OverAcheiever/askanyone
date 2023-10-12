@@ -2,6 +2,7 @@
 import posthog from "@/utils/posthog";
 import Image, { StaticImageData } from "next/image";
 import { toast, Toaster } from "react-hot-toast";
+import { CommentIcon, CommentIconMobile } from "@/app/icons";
 
 const Card = ({
   person,
@@ -10,6 +11,7 @@ const Card = ({
     image: StaticImageData;
     name: string;
     about: string;
+    users: string;
   };
 }) => {
   return (
@@ -46,9 +48,20 @@ const Card = ({
           priority
         />
         <div className="p-5 px-6">
-          <div className="text-3xl font-semibold text-white">{person.name}</div>
+          <div className="text-white text-3xl font-semibold">{person.name}</div>
           <div className="max-w-xs text-[#999999] font-inter font-normal mt-0.5">
             {person.about}
+          </div>
+          <div className="flex items-center gap-x-1 lg:gap-x-2 mt-1 lg:mt-2">
+            <div className="hidden lg:block">
+              <CommentIcon />
+            </div>
+            <div className="lg:hidden">
+              <CommentIconMobile />
+            </div>
+            <div className="text-[#999999] font-medium text-base lg:text-2xl tracking-wide">
+              {person.users}
+            </div>
           </div>
         </div>
       </div>

@@ -65,20 +65,30 @@ export default function Chat() {
                 <div
                   className={clsx(
                     message.role === "assistant"
-                      ? "bg-white"
-                      : "bg-black p-1.5 text-white",
+                      ? "bg-[#353535] w-14 h-14 flex justify-center items-center rounded-full"
+                      : "bg-[#353535] p-1.5 text-white w-14 h-14 flex justify-center items-center rounded-full",
                   )}
                 >
                   {message.role === "user" ? (
                     <UserIcon />
                   ) : (
-                    <div className="relative w-20 h-20 overflow-hidden bg-black rounded-full">
-                      <Image src="/andrew.png" alt="Shakespeare" fill />
+                    <div className="relative w-14 h-14 overflow-hidden bg-black">
+                      <Image
+                        src="/andrew.png"
+                        className="rounded-full"
+                        alt="Shakespeare"
+                        fill
+                      />
                     </div>
                   )}
                 </div>
-                <div className="prose prose-p:leading-relaxed mt-1 w-full text-[#ffffffb3] break-words">
-                  {message.content}
+                <div>
+                  <div className="text-[#999999] font-medium text-lg w-max h-max">
+                    Andrew
+                  </div>
+                  <div className="prose prose-p:leading-relaxed mt-1 w-full text-[#ffffffb3] break-words">
+                    {message.content}
+                  </div>
                 </div>
               </div>
             </div>

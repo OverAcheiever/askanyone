@@ -8,8 +8,8 @@ export const VercelIcon = () => {
     >
       <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#000000" />
     </svg>
-  )
-}
+  );
+};
 
 export const GithubIcon = () => {
   return (
@@ -22,8 +22,8 @@ export const GithubIcon = () => {
     >
       <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
     </svg>
-  )
-}
+  );
+};
 
 export const LoadingCircle = () => {
   return (
@@ -43,8 +43,8 @@ export const LoadingCircle = () => {
         fill="currentFill"
       />
     </svg>
-  )
-}
+  );
+};
 
 export const SendIcon = ({ className }: { className?: string }) => {
   return (
@@ -60,8 +60,8 @@ export const SendIcon = ({ className }: { className?: string }) => {
         fill="currentColor"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
 export const UserIcon = () => {
   return (
@@ -72,31 +72,114 @@ export const UserIcon = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
       <circle cx="12" cy="7" r="4" />
     </svg>
-  )
-}
-
+  );
+};
 
 export const SendArrow = ({ className }: { className?: string }) => {
-  return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
-<g id="Frame" clip-path="url(#clip0_3_1531)">
-<path id="Vector" d="M18.5 7.50012V28.5001" stroke="black" stroke-width="2.28516" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M27.5 16.5001L18.5 7.50012" stroke="black" stroke-width="2.28516" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_3" d="M9.5 16.5001L18.5 7.50012" stroke="black" stroke-width="2.28516" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_3_1531">
-<rect width="36" height="36" fill="white" transform="translate(0.5)"/>
-</clipPath>
-</defs>
-</svg>
-  )
-}
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="37"
+      height="36"
+      viewBox="0 0 37 36"
+      fill="none"
+    >
+      <g id="Frame" clip-path="url(#clip0_3_1531)">
+        <path
+          id="Vector"
+          d="M18.5 7.50012V28.5001"
+          stroke="black"
+          strokeWidth="2.28516"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          id="Vector_2"
+          d="M27.5 16.5001L18.5 7.50012"
+          stroke="black"
+          strokeWidth="2.28516"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          id="Vector_3"
+          d="M9.5 16.5001L18.5 7.50012"
+          stroke="black"
+          strokeWidth="2.28516"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_3_1531">
+          <rect
+            width="36"
+            height="36"
+            fill="white"
+            transform="translate(0.5)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
 
+export const CommentIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="37"
+      height="37"
+      viewBox="0 0 37 37"
+      fill="none"
+    >
+      <g clip-path="url(#clip0_3_1483)">
+        <path
+          d="M9.41169 7.39584C15.285 3.22969 23.679 3.57022 29.1093 8.20345C34.6346 12.915 35.3895 20.616 30.8451 26.1292C26.563 31.3229 18.8439 33.0346 12.4161 30.3556L12.0666 30.2034L5.47457 31.6062L5.36156 31.6258L5.19582 31.6393L5.02556 31.6333L4.95926 31.6258L4.79352 31.5956L4.63531 31.5444L4.48463 31.4781L4.37012 31.4148L4.20739 31.2988L4.08535 31.1873L3.97536 31.0623L3.8955 30.9493L3.79756 30.776L3.73428 30.6163L3.68757 30.446L3.66798 30.333L3.65442 30.1673L3.66045 29.997L3.66798 29.9307L3.69811 29.765L3.73126 29.6565L5.46402 24.4567L5.43087 24.4025C2.10097 18.7567 3.60922 11.7579 9.06363 7.65048L9.41018 7.39734L9.41169 7.39584Z"
+          fill="#484848"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_3_1483">
+          <rect
+            width="36.1618"
+            height="36.1618"
+            fill="white"
+            transform="translate(0.641663 -0.000854492)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const CommentIconMobile = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+    >
+      <g clip-path="url(#clip0_3_1419)">
+        <path
+          d="M3.88059 3.27322C6.47925 1.42989 10.1933 1.58056 12.5959 3.63056C15.0406 5.71522 15.3746 9.12256 13.3639 11.5619C11.4693 13.8599 8.05392 14.6172 5.20992 13.4319L5.05525 13.3646L2.13859 13.9852L2.08859 13.9939L2.01525 13.9999L1.93992 13.9972L1.91059 13.9939L1.83725 13.9806L1.76725 13.9579L1.70059 13.9286L1.64992 13.9006L1.57792 13.8492L1.52392 13.7999L1.47525 13.7446L1.43992 13.6946L1.39659 13.6179L1.36859 13.5472L1.34792 13.4719L1.33925 13.4219L1.33325 13.3486L1.33592 13.2732L1.33925 13.2439L1.35259 13.1706L1.36725 13.1226L2.13392 10.8219L2.11925 10.7979C0.645918 8.29989 1.31325 5.20322 3.72659 3.38589L3.87992 3.27389L3.88059 3.27322Z"
+          fill="#484848"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_3_1419">
+          <rect width="16" height="16" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};

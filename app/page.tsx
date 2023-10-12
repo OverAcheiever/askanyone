@@ -1,8 +1,5 @@
-
 import Card from "./components/home/card";
 import { people } from "./people";
-
-
 
 const getPeople = () => {
   const userCount = () => {
@@ -10,7 +7,7 @@ const getPeople = () => {
     return users > 1000 ? `${users / 1000}k` : users.toString();
   };
 
-  return people.map(person => ({ ...person, users: userCount() }));
+  return people.map((person) => ({ ...person, users: userCount() }));
 };
 
 const Page = () => {

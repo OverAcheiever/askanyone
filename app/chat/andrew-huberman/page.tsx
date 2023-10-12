@@ -72,13 +72,9 @@ export default function Chat() {
                   {message.role === "user" ? (
                     <UserIcon />
                   ) : (
-                    <Image
-                      src="/andrew.png"
-                      alt="Shakespeare"
-                      width={60}
-                      height={60}
-                      className="flex-shrink-0 object-cover rounded-full"
-                    />
+                    <div className="relative w-20 h-20 overflow-hidden bg-black rounded-full">
+                      <Image src="/andrew.png" alt="Shakespeare" fill />
+                    </div>
                   )}
                 </div>
                 <div className="prose prose-p:leading-relaxed mt-1 w-full text-[#ffffffb3] break-words">

@@ -73,7 +73,7 @@ export default function Chat() {
                   {message.role === "user" ? (
                     <UserIcon />
                   ) : (
-                    <div className="relative w-14 h-14 overflow-hidden bg-black">
+                    <div className="relative w-12 lg:w-14 h-12 lg:h-14 overflow-hidden bg-black">
                       <Image
                         src="/andrew.png"
                         className="rounded-full"

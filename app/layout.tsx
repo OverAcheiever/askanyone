@@ -10,9 +10,9 @@ const clash = localFont({
 })
 
 export const metadata = {
-  title: "Shooketh – AI bot fine-tuned on Shakespeare's literary works",
+  title: "askanyone",
   description:
-    "Shooketh is an AI bot built with the Vercel AI SDK and fine-tuned on Shakespeare's literary works."
+    ""
 }
 
 export default function RootLayout({

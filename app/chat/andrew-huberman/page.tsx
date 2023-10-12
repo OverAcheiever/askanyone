@@ -38,9 +38,9 @@ export default function Chat() {
   const disabled = isLoading || input.length === 0;
 
   return (
-    <main className="flex justify-center pt-10 pb-40 bg-black jus">
+    <main className="flex justify-center pt-10 pb-40 bg-black">
       <div className="w-full max-w-screen-lg">
-        <div className="flex items-center w-full text-4xl">
+        <div className="flex items-center w-full text-xl pl-2 lg:pl-0 lg:text-4xl">
           <Link href="/">
             <Image
               src="/back.svg"
@@ -52,7 +52,7 @@ export default function Chat() {
           </Link>
           <div className="pl-3 font-medium text-white">ANDREW HUBERMAN</div>
         </div>
-        <div className="font-inter">
+        <div className="font-inter mt-4 lg:mt-6">
           {messages.map((message, i) => (
             <div
               key={i}

@@ -3,6 +3,7 @@ import posthog from "@/utils/posthog";
 import Image, { StaticImageData } from "next/image";
 import { toast, Toaster } from "react-hot-toast";
 import { CommentIcon, CommentIconMobile } from "@/app/icons";
+import UsersImage from "../../../public/users.png";
 
 const Card = ({
   person,
@@ -26,7 +27,7 @@ const Card = ({
           window.location.href = "/chat/andrew-huberman";
         else {
           toast.error(
-            <div className="w-full text-xl font-medium text-black bg-white max-w-none">
+            <div className="w-full text-base lg:text-xl text-center font-medium text-black bg-white max-w-none">
               {person.name} AI STILL IN PROGRESS
             </div>,
             {
@@ -53,12 +54,15 @@ const Card = ({
             {person.about}
           </div>
           <div className="flex items-center gap-x-1 lg:gap-x-2 mt-1 lg:mt-2">
-            <div className="hidden lg:block">
+            <div className="w-4 h-4 lg:w-8 lg:h-8">
+              <Image src={UsersImage} alt="" />
+            </div>
+            {/* <div className="hidden lg:block">
               <CommentIcon />
             </div>
             <div className="lg:hidden">
               <CommentIconMobile />
-            </div>
+            </div> */}
             <div className="text-[#999999] font-medium text-base lg:text-2xl tracking-wide">
               {person.users}
             </div>

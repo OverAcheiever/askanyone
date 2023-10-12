@@ -16,12 +16,14 @@ const Page = () => {
   return (
     <div className="flex flex-col items-center justify-start w-full py-32 bg-black h-max">
       <div>
-        <div className="text-2xl font-semibold text-white lg:text-6xl">
-          ASKANYONE
-        </div>
-        <div className="text-[#999999] mt-2 text-base lg:text-4xl font-medium">
-          AI holograms created from hours of <br /> interviews and real
-          conversations.
+        <div className="max-w-[30rem] lg:max-w-80">
+          <div className="text-2xl font-semibold text-white lg:text-6xl">
+            ASKANYONE
+          </div>
+          <div className="text-[#999999] mt-2 text-base lg:text-2xl font-medium">
+            AI holograms created from hours of <br /> interviews and real
+            conversations.
+          </div>
         </div>
         {people.map((person, index) => (
           <Card person={person} />

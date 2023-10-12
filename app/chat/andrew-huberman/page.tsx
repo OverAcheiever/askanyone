@@ -13,7 +13,7 @@ import {
 } from "../../icons";
 import Textarea from "react-textarea-autosize";
 import Image from "next/image";
-import { people } from "@/app/page";
+import { people } from "@/app/people";
 import Link from "next/link";
 
 const examples = [
@@ -42,7 +42,13 @@ export default function Chat() {
       <div className="w-full max-w-screen-lg">
         <div className="flex items-center w-full text-4xl">
           <Link href="/">
-            <Image src="/back.svg" alt="" width={40} height={40} className="cursor-pointer" />
+            <Image
+              src="/back.svg"
+              alt=""
+              width={40}
+              height={40}
+              className="cursor-pointer"
+            />
           </Link>
           <div className="pl-3 font-medium text-white">ANDREW HUBERMAN</div>
         </div>

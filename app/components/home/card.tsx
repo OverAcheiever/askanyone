@@ -20,7 +20,7 @@ const Card = ({
 
   return (
     <Link
-      href={person.name === "ANDREW HUBERMAN" ? "/chat/andrew-huberman" : ""}
+      href={person.name === "ANDREW HUBERMAN" ? "/chat/andrew-huberman" : "/"}
     >
       <div className="w-max rounded-2xl border-[1.8px] border-[#484848] mt-10 cursor-pointer">
         <div className="w-80 lg:w-[30rem]">

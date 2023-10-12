@@ -85,7 +85,7 @@ export default function Chat() {
                 </div>
                 <div>
                   <div className="text-[#999999] font-medium text-lg w-max h-max">
-                    Andrew
+                    {message.role === "assistant" ? "Andrew" : "you"}
                   </div>
                   <div className="prose prose-p:leading-relaxed text-sm lg:text-base lg:mt-1 w-full text-[#ffffffb3] break-words">
                     {message.content}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { useChat } from "ai/react";
+import { Message, useChat } from "ai/react";
 import clsx from "clsx";
 import {
   VercelIcon,
@@ -35,6 +35,14 @@ export default function Chat() {
     },
   });
 
+  const prompt: Message = {
+    id: "1",
+    role: "assistant",
+    content: `My name's Andrew - as a researcher and professor, I've reached the edges of what our bodies, and specifically our brains, are capable of.
+        I can give you advice on how to craft a healthy lifestyle of full sleep and deep focus, or have deep conversations about personal growth and spirituality.
+        I'm here to listen, learn, and chat about how to unlock your full potential. What do you want to discuss?`,
+  };
+
   const disabled = isLoading || input.length === 0;
 
   return (
@@ -54,7 +62,7 @@ export default function Chat() {
           <div className="pl-3 font-medium text-white">ANDREW HUBERMAN</div>
         </div>
         <div className="font-inter mt-2 lg:mt-6">
-          {messages.map((message, i) => (
+          {[prompt, ...messages].map((message, i) => (
             <div
               key={i}
               className={clsx(

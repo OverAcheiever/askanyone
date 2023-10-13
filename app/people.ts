@@ -1,6 +1,7 @@
 import Andrew from "../public/andrew.png";
 import Kanye from "../public/kanye.png";
 import Jordan from "../public/jordan.png";
+import Alexander from "../public/alexander.png";
 
 export const people = [
   {
@@ -16,9 +17,9 @@ export const people = [
       "American rapper, singer, songwriter, record producer, and fashion designer.",
   },
   {
-    image: Jordan,
-    name: "JORDAN PETERSON",
+    image: Alexander,
+    name: "ALEXANDER THE GREAT",
     about:
-      "Canadian clinical psychologist, Professor of Psychology at the University of Toronto and author.",
+      "King of the ancient Greek kingdom of Macedon. Successor to Phillip II.",
   },
 ];
